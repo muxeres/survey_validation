@@ -1,0 +1,12 @@
+{% extends "index.html" %}
+{% block content %}
+<body>
+    <div class="border border-dark col-4 bg-dark mx-auto p-5 my-5">
+        <h1 class="text-warning">{{session['form']['name']}}</h1>
+        <p class="text-light">Dogo location: {{session['form']['location']}}</p>
+        <p class="text-light">Favorite language: {{session['form']['language']}}</p>
+        <p class="text-light">Comments: {{session['form']['comment']}}</p>
+        <a href="/" class="btn btn-warning">Home</a>
+    </div>
+</body>
+{% endblock %}
